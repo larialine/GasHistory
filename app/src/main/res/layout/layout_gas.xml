@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/tituloHistoricoTv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Histórico preço médio da Gasolina"
+        android:textSize="25sp"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/preco_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="R$ "
+        android:textSize="22sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tituloHistoricoTv" />
+
+    <TextView
+        android:id="@+id/dataTv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Data"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/preco_tv" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
